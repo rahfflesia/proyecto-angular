@@ -1,0 +1,22 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  gap: 1rem;
+}
+
+.grid > * {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  transition: transform 0.35s ease-in 0s;
+  cursor: pointer;
+}
+
+.grid > *:hover {
+  transform: scale(1.025);
+}
+
+@media (width <= 768px) {
+  .root {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,11 @@
+<div class="flex-column">
+  <div class="photo-placeholder" [style.backgroundColor]="getRandomHex()"></div>
+  <div class="workout-data-card flex-column">
+    <div class="workout-name">{{ title }}</div>
+    <div class="difficulty">{{ difficulty }}</div>
+    <div class="button-wrapper">
+      <span class="number-of-exercises">{{ numberOfExercises }} ejercicios</span>
+      <button class="start-button">Iniciar</button>
+    </div>
+  </div>
+</div>

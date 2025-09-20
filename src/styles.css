@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --h1-font-size: 2rem;
+  --border-color: #ebebeb;
+  --h2-font-size: 1.5rem;
+  --label-font-size: 0.8rem;
+  --primary-color: #0045f5;
+  --secondary-color: #fff;
+  --alternative-text-color: #adadad;
+  --border-radius: 0.5rem;
+  --padding: 1rem;
+  --bold-weight: bold;
+  --semi-bold: 400;
+  --black-weight: 900;
+  --gray-font-color: #7d7d7d;
+  --alternative-gray-font-color: #8c8989;
+}
+
+.router-outlet {
+  display: none;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  padding: calc(var(--padding) * 1.5);
+  margin-left: 84px;
+}
+
+cabecera {
+  margin-bottom: 1rem;
+}
+
+@media (width <= 768px) {
+  .wrapper {
+    margin-left: 0;
+  }
+}

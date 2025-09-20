@@ -1,0 +1,31 @@
+<form action="" class="signup-form" [class.isVisible]="isVisible">
+  <section>
+    <h1>FITAPP</h1>
+    <div class="frase">Crea tu cuenta y transforma tu rutina</div>
+  </section>
+  <section class="input-wrapper">
+    <div>
+      <label for="">Nombre de usuario</label>
+      <input type="text" required />
+    </div>
+    <div>
+      <label for="">Correo electrónico</label>
+      <input type="email" required />
+    </div>
+    <div>
+      <label for="">Contraseña</label>
+      <input type="password" />
+    </div>
+    <div>
+      <label for="">Confirmar contraseña</label>
+      <input type="password" />
+    </div>
+  </section>
+  <button type="submit" class="boton-registrar">Registrar</button>
+  <div class="o">o</div>
+  <div class="signup-options">
+    <button>Google</button>
+    <button>Facebook</button>
+  </div>
+  <span class="texto-login">¿Ya tienes una cuenta? <a routerLink="/login">Inicia sesión</a></span>
+</form>

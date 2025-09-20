@@ -1,0 +1,10 @@
+.signup-form {
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: opacity 0.75s ease-out, transform 0.75s ease-out;
+}
+
+.signup-form.isVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
