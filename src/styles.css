@@ -21,6 +21,15 @@
   --black-weight: 900;
   --gray-font-color: #7d7d7d;
   --alternative-gray-font-color: #8c8989;
+  --nocompletado: #f50000;
+  --enprogreso: #f57b00;
+  --imposible: #6e00ff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .router-outlet {

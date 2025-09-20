@@ -1,6 +1,6 @@
 .grid-logros {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -18,4 +18,26 @@
   color: #000;
   font-weight: 500;
   font-size: var(--h1-font-size);
+}
+
+.completado {
+  color: var(--primary-color);
+}
+
+.no-completado {
+  color: var(--nocompletado);
+}
+
+.en-progreso {
+  color: var(--enprogreso);
+}
+
+.imposible {
+  color: var(--imposible);
+}
+
+@media (width <= 768px) {
+  .grid-logros {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

@@ -4,4 +4,15 @@
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   padding: var(--padding);
+  height: 100%;
+  gap: 0.5rem;
+}
+
+.imagen-logro {
+  width: 75px;
+  height: 75px;
+}
+
+.titulo-logro {
+  font-weight: bold;
 }

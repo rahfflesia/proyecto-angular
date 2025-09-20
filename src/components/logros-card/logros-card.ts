@@ -10,4 +10,5 @@ export class LogrosCard {
   @Input() tituloLogro: string = '';
   @Input() descripcionLogro: string = '';
   @Input() estadoLogro: string = '';
+  @Input() imagenLogroUrl: string = '';
 }
