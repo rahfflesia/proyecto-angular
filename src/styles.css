@@ -17,7 +17,7 @@
   --border-radius: 0.5rem;
   --padding: 1rem;
   --bold-weight: bold;
-  --semi-bold: 400;
+  --semi-bold: 500;
   --black-weight: 900;
   --gray-font-color: #7d7d7d;
   --alternative-gray-font-color: #8c8989;
@@ -48,6 +48,22 @@ img {
 
 cabecera {
   margin-bottom: 1rem;
+}
+
+.default-button {
+  border: none;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  font-weight: var(--semi-bold);
+  padding: calc(var(--padding) * 0.5);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 400ms ease-in-out 0s;
+}
+
+.default-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 @media (width <= 768px) {

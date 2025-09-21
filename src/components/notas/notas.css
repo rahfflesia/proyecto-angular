@@ -1,0 +1,74 @@
+input {
+  border: none;
+  background-color: var(--border-color);
+  padding: calc(var(--padding) * 0.75);
+  border-radius: var(--border-radius);
+  transition: flex 400ms ease-out 0s;
+}
+
+.notas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
+  gap: 1rem;
+}
+
+.nota {
+  gap: 1rem;
+  border: 1px solid var(--border-color);
+  padding: calc(var(--padding) * 1.5);
+  border-radius: var(--border-radius);
+}
+
+.descripcion {
+  line-height: 1.5;
+  color: var(--alternative-gray-font-color);
+}
+
+.titulo {
+  color: var(--primary-color);
+  font-weight: var(--semi-bold);
+}
+
+.descripcion,
+.fecha-ultima-modificacion {
+  font-size: var(--label-font-size);
+}
+
+.fecha-ultima-modificacion {
+  font-weight: var(--semi-bold);
+}
+
+.fecha-wrapper,
+.icons-wrapper {
+  display: flex;
+}
+
+.fecha-wrapper {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons-wrapper {
+  gap: 0.75rem;
+}
+
+.icons-wrapper > * {
+  width: 20px;
+  height: 20px;
+}
+
+.buscar-agregar {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+#default-button {
+  border-radius: 100%;
+  padding: 0.5rem 1rem;
+  font-size: large;
+}
+
+input:focus {
+  flex: 1;
+}

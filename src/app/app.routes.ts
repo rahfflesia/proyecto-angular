@@ -5,6 +5,7 @@ import { MisRutinas } from '../components/mis-rutinas/mis-rutinas';
 import { CenteredLayoutComponent } from '../components/layout-components/layouts/centered-layout-component/centered-layout-component';
 import { Logros } from '../components/logros/logros';
 import { MainLayoutComponent } from '../components/layout-components/layouts/main-layout-component/main-layout-component';
+import { Notas } from '../components/notas/notas';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -22,6 +23,7 @@ export const routes: Routes = [
     children: [
       { path: 'misrutinas', component: MisRutinas },
       { path: 'logros', component: Logros },
+      { path: 'notas', component: Notas },
     ],
   },
 ];
