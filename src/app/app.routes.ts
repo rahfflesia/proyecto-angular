@@ -6,6 +6,7 @@ import { CenteredLayoutComponent } from '../components/layout-components/layouts
 import { Logros } from '../components/logros/logros';
 import { MainLayoutComponent } from '../components/layout-components/layouts/main-layout-component/main-layout-component';
 import { Notas } from '../components/notas/notas';
+import { Estadisticas } from '../components/estadisticas/estadisticas';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -24,6 +25,7 @@ export const routes: Routes = [
       { path: 'misrutinas', component: MisRutinas },
       { path: 'logros', component: Logros },
       { path: 'notas', component: Notas },
+      { path: 'estadisticas', component: Estadisticas },
     ],
   },
 ];

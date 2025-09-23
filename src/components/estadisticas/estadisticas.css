@@ -1,0 +1,78 @@
+.estadisticas-grid {
+  display: grid;
+  grid-template-areas:
+    'line-chart line-chart bar bar'
+    'pie pie radar radar'
+    'doughnut doughnut minutos sesiones';
+  gap: 1.5rem;
+}
+
+h2 {
+  font-weight: 450;
+  font-size: 1.15rem;
+}
+
+canvas {
+  max-width: min(400px, 100%);
+}
+
+.estadisticas-grid > * {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+}
+
+.bar-chart {
+  grid-area: bar;
+}
+
+.pie-chart {
+  grid-area: pie;
+}
+
+.line-chart {
+  grid-area: line-chart;
+}
+
+.sesiones {
+  grid-area: sesiones;
+}
+
+.minutos {
+  grid-area: minutos;
+}
+
+.radar-chart {
+  grid-area: radar;
+}
+
+.doughnut-chart {
+  grid-area: doughnut;
+}
+
+.centrar {
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+}
+
+.square-chart {
+  max-width: min(300px, 100%);
+}
+
+.rectangular-chart {
+  max-width: min(400px, 100%);
+}
+
+@media (width <= 768px) {
+  .estadisticas-grid {
+    grid-template-areas:
+      'line-chart'
+      'bar'
+      'pie'
+      'radar'
+      'doughnut'
+      'minutos'
+      'sesiones';
+  }
+}
