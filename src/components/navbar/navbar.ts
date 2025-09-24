@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })
-export class Navbar {}
+export class Navbar {
+  mostrarMenu() {
+    alert('Al hacer clic aquí debería mostrarse el menú');
+  }
+}

@@ -9,9 +9,10 @@
   position: fixed;
 }
 
-img {
-  display: block;
-  max-width: 100%;
+.hamburger-button {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
 
 .icons > *,
@@ -51,8 +52,9 @@ img {
   }
 
   .title {
-    display: block !important;
+    display: flex !important;
     color: var(--secondary-color);
+    justify-content: space-between;
   }
 
   .title > h1 {
