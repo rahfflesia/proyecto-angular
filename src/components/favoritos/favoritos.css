@@ -1,0 +1,32 @@
+.menu {
+  display: flex;
+}
+
+.menu > * {
+  border: none;
+  flex: 1;
+  padding: 0.75rem;
+  font-weight: var(--semi-bold);
+  cursor: pointer;
+}
+
+.grid-favoritos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  gap: 1rem;
+}
+
+.grid-favoritos > * {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.rutinas {
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.ejercicios {
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}

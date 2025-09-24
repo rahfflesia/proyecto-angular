@@ -10,6 +10,7 @@ export class WorkoutCard {
   @Input() title: string = '';
   @Input() numberOfExercises: string = '';
   @Input() difficulty: string = '';
+  @Input() imgUrl: string = '';
 
   getRandomHex(): string {
     let randomColor: string = '#';

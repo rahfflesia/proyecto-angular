@@ -13,10 +13,7 @@ export class Estadisticas {
   // Datos dummy
   public barChartData: ChartConfiguration<'bar'>['data'] = {
     labels: ['2022', '2023', '2024'],
-    datasets: [
-      { data: [65, 59, 80], label: 'Series A' },
-      { data: [28, 48, 40], label: 'Series B' },
-    ],
+    datasets: [{ data: [28, 48, 40], backgroundColor: '#0045f5', label: 'Volumen de realización' }],
   };
   public barChartOptions: ChartConfiguration<'bar'>['options'] = {};
 
@@ -25,16 +22,7 @@ export class Estadisticas {
     datasets: [
       {
         data: [350, 450, 100],
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.8)',
-          'rgba(54, 162, 235, 0.8)',
-          'rgba(255, 206, 86, 0.8)',
-        ],
-        hoverBackgroundColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-        ],
+        backgroundColor: ['#0045f5', '#356effff', '#80a4ffff'],
         hoverBorderColor: '#fff',
       },
     ],
@@ -55,14 +43,14 @@ export class Estadisticas {
       {
         data: [65, 59, 80, 81, 56, 55, 40],
         label: 'Ventas 2024',
-        borderColor: 'rgba(54, 162, 235, 1)',
-        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+        borderColor: '#0045f5',
+        backgroundColor: '#80a4ffff',
       },
       {
         data: [28, 48, 40, 19, 86, 27, 90],
         label: 'Ventas 2025',
-        borderColor: 'rgba(255, 99, 132, 1)',
-        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        borderColor: '#80a4ffff',
+        backgroundColor: '#80a4ffff',
       },
     ],
   };
@@ -85,27 +73,17 @@ export class Estadisticas {
   };
 
   public radarChartData: ChartConfiguration['data'] = {
-    labels: ['HTML y CSS', 'JavaScript', 'TypeScript', 'Angular', 'SQL', 'Git', 'Inglés'],
+    labels: ['Cardiovascular', 'Fuerza', 'Peso Corporal', 'Estiramientos'],
     datasets: [
       {
-        data: [90, 80, 85, 95, 70, 80, 75],
-        label: 'Desarrollador A (Senior)',
-        backgroundColor: 'rgba(54, 162, 235, 0.2)',
-        borderColor: 'rgba(54, 162, 235, 1)',
-        pointBackgroundColor: 'rgba(54, 162, 235, 1)',
+        data: [70, 75, 60, 50],
+        label: 'Categoría de ejercicios más realizados',
+        backgroundColor: 'rgba(83, 44, 255, 0.2)',
+        borderColor: '#80a4ffff',
+        pointBackgroundColor: '#0045f5',
         pointBorderColor: '#fff',
         pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: 'rgba(54, 162, 235, 0.8)',
-      },
-      {
-        data: [70, 75, 60, 50, 60, 70, 80],
-        label: 'Desarrollador B (Junior)',
-        backgroundColor: 'rgba(255, 99, 132, 0.2)',
-        borderColor: 'rgba(255, 99, 132, 1)',
-        pointBackgroundColor: 'rgba(255, 99, 132, 1)',
-        pointBorderColor: '#fff',
-        pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: 'rgba(255, 99, 132, 0.8)',
+        pointHoverBorderColor: '#80a4ffff',
       },
     ],
   };
@@ -128,8 +106,7 @@ export class Estadisticas {
     datasets: [
       {
         data: [5000, 3500, 1200, 800, 1500],
-        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF'],
-        hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF'],
+        backgroundColor: ['#356effff', '#80a4ffff', '#c8d7ffff', '#80a4ffff', '#cddbffff'],
         hoverBorderColor: '#fff',
       },
     ],

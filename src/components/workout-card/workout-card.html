@@ -1,5 +1,7 @@
 <div class="flex-column">
-  <div class="photo-placeholder" [style.backgroundColor]="getRandomHex()"></div>
+  <div class="photo-placeholder" [style.backgroundColor]="getRandomHex()">
+    <img [src]="imgUrl" alt="" />
+  </div>
   <div class="workout-data-card flex-column">
     <div class="workout-name">{{ title }}</div>
     <div class="difficulty">{{ difficulty }}</div>

@@ -1,6 +1,13 @@
 .photo-placeholder {
-  padding: 3rem 2rem;
   border-radius: 0.5rem;
+  height: 125px;
+}
+
+.photo-placeholder > img {
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .workout-data-card {
