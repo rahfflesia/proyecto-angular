@@ -8,6 +8,7 @@ import { MainLayoutComponent } from '../components/layout-components/layouts/mai
 import { Notas } from '../components/notas/notas';
 import { Estadisticas } from '../components/estadisticas/estadisticas';
 import { Favoritos } from '../components/favoritos/favoritos';
+import { Perfil } from '../components/perfil/perfil';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -28,6 +29,7 @@ export const routes: Routes = [
       { path: 'notas', component: Notas },
       { path: 'estadisticas', component: Estadisticas },
       { path: 'favoritos', component: Favoritos },
+      { path: 'perfil', component: Perfil },
     ],
   },
 ];

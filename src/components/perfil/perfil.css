@@ -1,0 +1,101 @@
+#profile-wrapper {
+  padding: 0;
+  margin-left: 83px;
+}
+
+h3 {
+  font-weight: var(--semi-bold);
+}
+
+.foto-portada {
+  background-color: black;
+  padding: 6rem;
+  position: relative;
+}
+
+.foto-perfil {
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(calc(192px / 2));
+  margin-left: 2rem;
+  border-radius: 100%;
+}
+
+.foto-perfil > img {
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.user-info {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: calc(175px / 2);
+  gap: 0.75rem;
+}
+
+.nivel-wrapper > * {
+  font-size: 1.5rem;
+}
+
+.nivel {
+  background-color: var(--medium-level-color);
+  color: var(--secondary-color);
+  padding: 0.25rem 1.25rem;
+  border-radius: var(--border-radius);
+  display: grid;
+  place-items: center;
+  font-weight: var(--semi-bold);
+}
+
+.nivel + * {
+  padding: 0.25rem 5rem;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.profile-grid > * {
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.informacion-personal,
+.progreso-nivel {
+  gap: 1.5rem;
+}
+
+.altura,
+.peso {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.puntos-faltantes > span {
+  color: var(--alternative-gray-font-color);
+  font-size: 0.85rem;
+}
+
+.progress-bar-component {
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  padding: 0.75rem;
+}
+
+.progress-bar {
+  gap: 1rem;
+}
+
+.logros-component {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+}
