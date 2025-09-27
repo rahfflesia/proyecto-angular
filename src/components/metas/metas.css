@@ -1,0 +1,22 @@
+.metas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
+  gap: 1rem;
+}
+
+.metas-grid > * {
+  padding: calc(var(--padding) * 1.5);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}
+
+.seleccion-tipo-meta {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.seleccion-tipo-meta > * {
+  flex: 1;
+  border: none;
+  padding: 0.5rem;
+}

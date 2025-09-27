@@ -9,6 +9,7 @@ import { Notas } from '../components/notas/notas';
 import { Estadisticas } from '../components/estadisticas/estadisticas';
 import { Favoritos } from '../components/favoritos/favoritos';
 import { Perfil } from '../components/perfil/perfil';
+import { Metas } from '../components/metas/metas';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -30,6 +31,7 @@ export const routes: Routes = [
       { path: 'estadisticas', component: Estadisticas },
       { path: 'favoritos', component: Favoritos },
       { path: 'perfil', component: Perfil },
+      { path: 'metas', component: Metas },
     ],
   },
 ];

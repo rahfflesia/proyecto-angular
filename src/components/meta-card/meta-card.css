@@ -1,0 +1,43 @@
+.meta-card {
+  gap: 1rem;
+}
+
+.header-meta:first-child {
+  color: var(--primary-color);
+}
+
+#plazo,
+.porcentaje {
+  font-size: 0.8rem;
+}
+
+.desc,
+.seguimiento-progreso {
+  font-size: 0.85rem;
+}
+
+.seguimiento-progreso,
+.header-meta:first-child {
+  font-weight: var(--semi-bold);
+}
+
+.desc,
+#plazo,
+.porcentaje {
+  color: var(--alternative-gray-font-color);
+}
+
+.progress-bar {
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+}
+
+.progreso {
+  gap: 0.5rem;
+}
+
+.iconos > img {
+  width: 20px;
+  height: 20px;
+}

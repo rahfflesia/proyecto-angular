@@ -68,6 +68,12 @@ cabecera {
   color: var(--primary-color);
 }
 
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media (width <= 768px) {
   .wrapper {
     margin-left: 0;
