@@ -10,8 +10,8 @@
 }
 
 .hamburger-button {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
 }
 
@@ -55,6 +55,7 @@
     display: flex !important;
     color: var(--secondary-color);
     justify-content: space-between;
+    align-items: center;
   }
 
   .title > h1 {

@@ -9,8 +9,8 @@ h3 {
 
 .foto-portada {
   background-color: black;
-  padding: 6rem;
   position: relative;
+  height: 192px;
 }
 
 .foto-perfil {
@@ -31,12 +31,16 @@ h3 {
 }
 
 .user-info {
-  margin: calc(175px / 2) 2rem 2rem 2rem;
+  margin: calc(175px / 2) 1.5rem 1.5rem 1.5rem;
   gap: 0.75rem;
 }
 
 .nivel-wrapper > * {
   font-size: 1.5rem;
+}
+
+.nombre-usuario > h2 {
+  font-size: 2rem;
 }
 
 .nivel {
@@ -115,5 +119,35 @@ h3 {
 @media (width <= 768px) {
   #profile-wrapper {
     margin-left: 0;
+  }
+
+  .user-info {
+    margin: calc(150px / 2) 1.5rem 1.5rem 1.5rem;
+  }
+
+  .foto-portada {
+    height: 140px;
+  }
+
+  .foto-perfil {
+    width: 150px;
+    height: 150px;
+    transform: translateY(calc(140px / 2));
+  }
+}
+
+@media (width <= 500px) {
+  .user-info {
+    margin: calc(125px / 2) 1.5rem 1.5rem 1.5rem;
+  }
+
+  .foto-portada {
+    height: 115px;
+  }
+
+  .foto-perfil {
+    width: 125px;
+    height: 125px;
+    transform: translateY(calc(115px / 2));
   }
 }
