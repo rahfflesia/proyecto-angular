@@ -74,6 +74,10 @@ cabecera {
   color: var(--primary-color);
 }
 
+.blue-font-color {
+  color: var(--primary-color);
+}
+
 .flex-between {
   display: flex;
   justify-content: space-between;

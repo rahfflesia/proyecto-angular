@@ -1,3 +1,7 @@
 router-outlet {
   flex: 1;
 }
+
+.main-layout {
+  position: relative;
+}

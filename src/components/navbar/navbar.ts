@@ -1,16 +1,18 @@
 import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { MenuMovil } from '../menu-movil/menu-movil';
 
 @Component({
   selector: 'navbar',
-  imports: [],
+  imports: [MenuMovil],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })
 export class Navbar {
   private router = inject(Router);
-  mostrarMenu() {
-    alert('Al hacer clic aquí debería mostrarse el menú');
+  isMenuVisibile: boolean = false;
+  toggleMenu() {
+    this.isMenuVisibile = !this.isMenuVisibile;
   }
 
   toStats() {

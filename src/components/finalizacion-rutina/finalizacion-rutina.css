@@ -1,0 +1,35 @@
+.root-final-rutina {
+  height: 100dvh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.root-final-rutina:not(h3) {
+  font-weight: var(--semi-bold);
+}
+
+.mensaje-motivacional {
+  color: var(--alternative-gray-font-color);
+}
+
+.icon > img {
+  width: 40px;
+  height: 40px;
+}
+
+.icon {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.badge-wrapper {
+  width: 150px;
+  height: 150px;
+}
+
+.header > * {
+  text-align: center;
+}

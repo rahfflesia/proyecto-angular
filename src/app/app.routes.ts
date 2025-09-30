@@ -14,6 +14,7 @@ import { RoutineLayoutComponent } from '../components/layout-components/layouts/
 import { RestSection } from '../components/rest-section/rest-section';
 import { ExerciseSection } from '../components/exercise-section/exercise-section';
 import { HomePage } from '../components/home-page/home-page';
+import { FinalizacionRutina } from '../components/finalizacion-rutina/finalizacion-rutina';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -45,6 +46,7 @@ export const routes: Routes = [
     children: [
       { path: 'rest', component: RestSection },
       { path: 'exercise', component: ExerciseSection },
+      { path: 'finalrutina', component: FinalizacionRutina },
     ],
   },
 ];
