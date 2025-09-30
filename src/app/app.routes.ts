@@ -13,6 +13,7 @@ import { Metas } from '../components/metas/metas';
 import { RoutineLayoutComponent } from '../components/layout-components/layouts/routine-layout-component/routine-layout-component';
 import { RestSection } from '../components/rest-section/rest-section';
 import { ExerciseSection } from '../components/exercise-section/exercise-section';
+import { HomePage } from '../components/home-page/home-page';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -35,6 +36,7 @@ export const routes: Routes = [
       { path: 'favoritos', component: Favoritos },
       { path: 'perfil', component: Perfil },
       { path: 'metas', component: Metas },
+      { path: 'home', component: HomePage },
     ],
   },
   {

@@ -1,0 +1,129 @@
+.bienvenida {
+  display: flex;
+  justify-content: space-between;
+}
+
+.foto-perfil {
+  width: 175px;
+  height: 175px;
+}
+
+.foto-perfil > img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.mensaje-bienvenida {
+  font-weight: var(--semi-bold);
+  font-size: 1.75rem;
+}
+
+h2,
+h3 {
+  font-weight: var(--semi-bold);
+}
+
+.mensaje-bienvenida > span {
+  color: var(--primary-color);
+}
+
+.foto-perfil > img {
+  object-fit: cover;
+}
+
+.grupos-musculares-principales {
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.grupos-musculares-principales > * {
+  flex: 1;
+}
+
+.grupos-musculares-principales button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
+  font-weight: var(--semi-bold);
+  cursor: pointer;
+}
+
+.rutinas-musculo {
+  gap: 1rem;
+}
+
+.rutina {
+  display: flex;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.img-wrapper {
+  width: 125px;
+}
+
+.img-wrapper > img {
+  border-radius: var(--border-radius);
+  object-fit: cover;
+  height: 100%;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dificultad-ejercicios {
+  gap: 0.5rem;
+  font-weight: var(--semi-bold);
+}
+
+.iconos {
+  display: flex;
+  gap: 1rem;
+}
+
+.iconos > * {
+  width: 30px;
+  height: 30px;
+}
+
+.musculo-seleccionado,
+.entrenamiento {
+  gap: 1rem;
+}
+
+.labels {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.gray-outline-button {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--border-color);
+}
+
+.labels > button {
+  flex: 1;
+}
+
+.metas-populares {
+  gap: 1rem;
+}
+
+.metas-populares-labels {
+  display: flex;
+  gap: 1rem;
+}
