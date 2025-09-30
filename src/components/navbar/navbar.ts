@@ -16,4 +16,32 @@ export class Navbar {
   toStats() {
     this.router.navigate(['/estadisticas']);
   }
+
+  toGoals() {
+    this.router.navigate(['/metas']);
+  }
+
+  toProfile() {
+    this.router.navigate(['/perfil']);
+  }
+
+  toAchievements() {
+    this.router.navigate(['/logros']);
+  }
+
+  toFavorites() {
+    this.router.navigate(['/favoritos']);
+  }
+
+  toNotes() {
+    this.router.navigate(['/notas']);
+  }
+
+  toMyRoutines() {
+    this.router.navigate(['/misrutinas']);
+  }
+
+  logout() {
+    this.router.navigate(['/login']);
+  }
 }

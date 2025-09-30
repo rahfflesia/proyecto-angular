@@ -1,0 +1,60 @@
+.exercise-section-root {
+  height: 100dvh;
+}
+
+.skip-next-section > * {
+  flex: 1;
+}
+
+.current-exercise,
+.interactive-section {
+  display: grid;
+  place-items: center;
+}
+
+.current-exercise,
+.interactive-section {
+  flex-grow: 2;
+}
+
+.skip-next-section {
+  flex-grow: 0.5;
+}
+
+.exercise-name,
+.reps {
+  font-weight: var(--black-weight);
+  font-size: 2rem;
+}
+
+.done {
+  font-weight: var(--black-weight);
+  font-size: 1.5rem;
+  padding: 0.5rem 3rem;
+}
+
+.current-exercise,
+.interactive-section {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.5rem;
+}
+
+button {
+  border: none;
+}
+
+.skip-next-section {
+  display: flex;
+}
+
+#anterior,
+#saltar {
+  border-radius: 0;
+}
+
+@media (width >= 768px) {
+  .current-exercise > img {
+    width: 250px;
+    height: 250px;
+  }
+}

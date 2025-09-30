@@ -10,6 +10,9 @@ import { Estadisticas } from '../components/estadisticas/estadisticas';
 import { Favoritos } from '../components/favoritos/favoritos';
 import { Perfil } from '../components/perfil/perfil';
 import { Metas } from '../components/metas/metas';
+import { RoutineLayoutComponent } from '../components/layout-components/layouts/routine-layout-component/routine-layout-component';
+import { RestSection } from '../components/rest-section/rest-section';
+import { ExerciseSection } from '../components/exercise-section/exercise-section';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -32,6 +35,14 @@ export const routes: Routes = [
       { path: 'favoritos', component: Favoritos },
       { path: 'perfil', component: Perfil },
       { path: 'metas', component: Metas },
+    ],
+  },
+  {
+    path: '',
+    component: RoutineLayoutComponent,
+    children: [
+      { path: 'rest', component: RestSection },
+      { path: 'exercise', component: ExerciseSection },
     ],
   },
 ];
