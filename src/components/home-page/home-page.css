@@ -1,11 +1,17 @@
 .bienvenida {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .foto-perfil {
-  width: 175px;
-  height: 175px;
+  width: 100px;
+  height: 100px;
+  margin: 1rem 0;
+}
+
+.rutinas-metas-populares {
+  gap: 1rem;
 }
 
 .foto-perfil > img {
@@ -64,7 +70,7 @@ h3 {
 }
 
 .img-wrapper {
-  width: 125px;
+  width: 100px;
 }
 
 .img-wrapper > img {
@@ -86,14 +92,18 @@ h3 {
   font-weight: var(--semi-bold);
 }
 
+.dificultad-ejercicios span {
+  font-size: 0.85rem;
+}
+
 .iconos {
   display: flex;
   gap: 1rem;
 }
 
 .iconos > * {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 .musculo-seleccionado,
@@ -126,4 +136,55 @@ h3 {
 .metas-populares-labels {
   display: flex;
   gap: 1rem;
+}
+
+.crear-rutina {
+  padding: 1rem;
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  color: var(--secondary-color);
+  gap: 0.75rem;
+}
+
+.crear-rutina div > button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  border-radius: 1rem;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+
+.programas-ejercicios-slider {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  gap: 1rem;
+}
+
+.programas-ejercicios-slider > * {
+  flex: 1;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+}
+
+.programas-ejercicio {
+  gap: 1rem;
+}
+
+@media (width >= 768px) {
+  .foto-perfil {
+    width: 175px;
+    height: 175px;
+  }
+
+  .iconos > * {
+    width: 30px;
+    height: 30px;
+  }
+
+  .dificultad-ejercicios span {
+    font-size: 1rem;
+  }
 }

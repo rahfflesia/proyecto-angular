@@ -44,6 +44,11 @@ img {
   flex-direction: column;
 }
 
+button {
+  border: none;
+  border-radius: var(--border-radius);
+}
+
 .wrapper {
   padding: calc(var(--padding) * 1.5);
   margin-left: 84px;
