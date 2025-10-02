@@ -4,6 +4,10 @@
   flex-wrap: wrap;
 }
 
+.home-page-root {
+  position: relative;
+}
+
 .foto-perfil {
   width: 100px;
   height: 100px;
@@ -171,6 +175,17 @@ h3 {
 
 .programas-ejercicio {
   gap: 1rem;
+}
+
+.show-component {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in 0s;
+}
+
+.show-component.isVisible {
+  opacity: 1;
+  visibility: visible;
 }
 
 @media (width >= 768px) {

@@ -1,0 +1,56 @@
+.agregar-ejercicio-root {
+  position: fixed;
+  min-height: 100dvh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  top: 0;
+  left: 0;
+}
+
+.agregar-ejercicio-componente {
+  position: fixed;
+  background-color: var(--secondary-color);
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  z-index: 1;
+  gap: 1rem;
+}
+
+input {
+  border: none;
+  background-color: var(--border-color);
+  border-radius: var(--border-radius);
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.exercises-container {
+  gap: 1rem;
+}
+
+.exercises-container > * {
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close {
+  padding: 0.5rem;
+  font-weight: var(--black-weight);
+  cursor: pointer;
+  border-radius: var(--border-radius);
+}
+
+.close:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}

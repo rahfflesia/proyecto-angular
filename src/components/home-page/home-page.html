@@ -1,4 +1,9 @@
-<div class="flex-column wrapper">
+<agregar-ejercicios
+  class="show-component"
+  (close)="closeMenu()"
+  [class.isVisible]="isExerciseComponentVisible"
+></agregar-ejercicios>
+<div class="flex-column wrapper home-page-root">
   <section class="bienvenida">
     <div class="mensaje-bienvenida">Bienvenido, <span>Usuario</span></div>
     <div class="foto-perfil">
@@ -149,7 +154,7 @@
       <div class="crear-rutina flex-column">
         <h2>¿No encuentras lo que buscas?</h2>
         <span>Crea tu propia rutina</span>
-        <div><button>Crear</button></div>
+        <div><button (click)="toggleExerciseComponent()">Crear</button></div>
       </div>
     </div>
   </section>
