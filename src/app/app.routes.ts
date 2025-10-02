@@ -15,6 +15,7 @@ import { RestSection } from '../components/rest-section/rest-section';
 import { ExerciseSection } from '../components/exercise-section/exercise-section';
 import { HomePage } from '../components/home-page/home-page';
 import { FinalizacionRutina } from '../components/finalizacion-rutina/finalizacion-rutina';
+import { Historial } from '../components/historial/historial';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -38,6 +39,7 @@ export const routes: Routes = [
       { path: 'perfil', component: Perfil },
       { path: 'metas', component: Metas },
       { path: 'home', component: HomePage },
+      { path: 'historial', component: Historial },
     ],
   },
   {

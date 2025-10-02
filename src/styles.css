@@ -49,6 +49,10 @@ button {
   border-radius: var(--border-radius);
 }
 
+main-layout-component {
+  position: relative;
+}
+
 .wrapper {
   padding: calc(var(--padding) * 1.5);
   margin-left: 84px;
