@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject, Output, EventEmitter } from '@angular/core';
+import { NavigationService } from '../../servicios/navigation';
 
 @Component({
   selector: 'menu-movil',
@@ -6,4 +7,11 @@ import { Component } from '@angular/core';
   templateUrl: './menu-movil.html',
   styleUrl: './menu-movil.css',
 })
-export class MenuMovil {}
+export class MenuMovil {
+  navigation = inject(NavigationService);
+  @Output() linkClicked = new EventEmitter<void>();
+
+  onLinkClicked(): void {
+    this.linkClicked.emit();
+  }
+}

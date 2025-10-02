@@ -44,6 +44,16 @@
   background-color: rgb(17, 17, 190);
 }
 
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease-in 0s;
+}
+
+.mobile-menu.isVisible {
+  max-height: 500px;
+}
+
 @media (width <= 768px) {
   .navbar-wrapper {
     position: static;

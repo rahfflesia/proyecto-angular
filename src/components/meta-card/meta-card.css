@@ -1,5 +1,6 @@
 .meta-card {
   gap: 1rem;
+  padding: 1.5rem;
 }
 
 .header-meta:first-child {

@@ -1,20 +1,36 @@
 <div class="menu-movil flex-column">
   <div class="menu-movil-interno flex-column">
-    <div class="menu-movil-header">
-      <h2>Secciones</h2>
-      <div class="close-button">X</div>
-    </div>
     <div class="secciones-principales flex-column">
-      <div>Home</div>
-      <div>Estadísticas</div>
-      <div>Mis rutinas</div>
-      <div>Metas</div>
-      <div>Notas</div>
-      <div>Perfil</div>
-      <div>Logros</div>
-      <div>Favoritos</div>
-      <div>Historial</div>
+      <div (click)="navigation.toHome(); onLinkClicked()">
+        <img src="/images/navbar-icons/icons8-home-50.png" alt="home-icon" />Home
+      </div>
+      <div (click)="navigation.toStats(); onLinkClicked()">
+        <img src="/images/navbar-icons/icons8-statistics-60.png" alt="" />Estadísticas
+      </div>
+      <div (click)="navigation.toMyRoutines(); onLinkClicked()">
+        <img src="/images/navbar-icons/icons8-dumbell-64.png" alt="" />Mis rutinas
+      </div>
+      <div (click)="navigation.toGoals(); onLinkClicked()">
+        <img src="/images/navbar-icons/icons8-goal-50.png" alt="" />Metas
+      </div>
+      <div (click)="navigation.toNotes(); onLinkClicked()">
+        <img src="/images/navbar-icons/icons8-notes-50.png" alt="" />Notas
+      </div>
+      <div (click)="navigation.toProfile(); onLinkClicked()">
+        <img src="/images/navbar-icons/icons8-profile-52.png" alt="" />Perfil
+      </div>
+      <div (click)="navigation.toAchievements(); onLinkClicked()">
+        <img src="/images/navbar-icons/icons8-trophy-52.png" alt="" />Logros
+      </div>
+      <div (click)="navigation.toFavorites(); onLinkClicked()">
+        <img src="/images/navbar-icons/icons8-heart-52.png" alt="" />Favoritos
+      </div>
+      <div (click)="navigation.toHistory(); onLinkClicked()">
+        <img src="/images/navbar-icons/icons8-history-52.png" alt="" />Historial
+      </div>
+      <div (click)="navigation.logout(); onLinkClicked()">
+        <img src="/images/navbar-icons/icons8-log-out-64.png" alt="" />Cerrar sesión
+      </div>
     </div>
-    <div>Cerrar sesión</div>
   </div>
 </div>

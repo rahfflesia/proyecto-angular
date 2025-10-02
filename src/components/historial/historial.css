@@ -1,0 +1,18 @@
+.wrapper > section {
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-weight: var(--semi-bold);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
+  gap: 1rem;
+}
+
+.grid-container > * {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
