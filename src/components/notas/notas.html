@@ -1,8 +1,13 @@
+<modal-notas
+  class="modal"
+  (close)="closeModal()"
+  [class.isVisible]="isNotesModalVisible"
+></modal-notas>
 <div class="flex-column wrapper">
   <cabecera titulo="Notas" descripcion="Registra tus progresos y tus pensamientos"></cabecera>
   <div class="buscar-agregar">
     <input type="text" placeholder="Buscar en tus notas..." />
-    <button class="default-button" id="default-button">+</button>
+    <button class="default-button" id="default-button" (click)="openModal()">+</button>
   </div>
   <div class="notas-grid">
     <div class="nota flex-column">

@@ -56,10 +56,27 @@ main-layout-component {
 .wrapper {
   padding: calc(var(--padding) * 1.5);
   margin-left: 84px;
+  position: relative;
 }
 
 cabecera {
   margin-bottom: 1rem;
+}
+
+textarea {
+  font-size: 0.9rem;
+}
+
+.close-button {
+  font-weight: var(--black-weight);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+}
+
+.close-button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .default-button {
@@ -73,7 +90,8 @@ cabecera {
   transition: background-color 400ms ease-in-out 0s;
 }
 
-.default-button:hover {
+.default-button:hover,
+.default-button:focus {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }

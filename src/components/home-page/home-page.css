@@ -177,17 +177,6 @@ h3 {
   gap: 1rem;
 }
 
-.show-component {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 1s ease-in 0s;
-}
-
-.show-component.isVisible {
-  opacity: 1;
-  visibility: visible;
-}
-
 @media (width >= 768px) {
   .foto-perfil {
     width: 175px;

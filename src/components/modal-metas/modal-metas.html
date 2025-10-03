@@ -1,0 +1,20 @@
+<div class="modal-metas-wrapper">
+  <div class="flex-column modal-metas-component">
+    <div class="modal-metas-header flex-between blue-font-color">
+      <h3>Creación/edición de metas</h3>
+      <div class="close-button" (click)="closeMenu()">X</div>
+    </div>
+    <input type="text" placeholder="Nombre de la meta" />
+    <textarea placeholder="Descripción"></textarea>
+    <input type="text" placeholder="Tipo de meta" />
+    <div class="flex-column fecha-limite">
+      <label>Fecha límite</label>
+      <input type="date" placeholder="Fecha límite" />
+    </div>
+    <div class="valores">
+      <input type="text" placeholder="Valor actual" style="margin-right: 0.75rem" />
+      <input type="text" placeholder="Valor objetivo" />
+    </div>
+    <button class="default-button">Aceptar</button>
+  </div>
+</div>

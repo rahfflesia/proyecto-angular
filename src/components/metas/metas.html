@@ -1,8 +1,13 @@
+<modal-metas [class.isVisible]="isGoalsModalVisible" (close)="closeGoalsModal()"></modal-metas>
 <div class="flex-column wrapper">
   <cabecera
     titulo="Mis metas"
     descripcion="Anota tus objetivos para mantenerte motivado"
   ></cabecera>
+  <div class="agregar-meta">
+    <h3>Agrega una meta</h3>
+    <div class="default-button add-button" (click)="showGoalsModal()">+</div>
+  </div>
   <div class="seleccion-tipo-meta">
     <button>Activas</button>
     <button>Completadas</button>

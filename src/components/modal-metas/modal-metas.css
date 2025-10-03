@@ -1,0 +1,60 @@
+.modal-metas-wrapper {
+  display: flex;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-metas-component {
+  background-color: var(--secondary-color);
+  padding: 1.5rem;
+  z-index: 2;
+  border-radius: var(--border-radius);
+  gap: 1rem;
+}
+
+:host {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 400ms ease-in;
+  transform: scale(0);
+  z-index: 1000;
+}
+
+:host(.isVisible) {
+  transform: scale(1);
+}
+
+.fecha-limite {
+  gap: 0.5rem;
+}
+
+label {
+  font-size: 0.8rem;
+  color: var(--alternative-gray-font-color);
+}
+
+input[type='date'] {
+  color: var(--alternative-gray-font-color);
+}
+
+input,
+textarea {
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+}
+
+textarea {
+  resize: none;
+}
