@@ -1,16 +1,25 @@
+<expandir-nota
+  (close)="expandNote = modalToggler.closeModal()"
+  [class.isVisible]="expandNote"
+></expandir-nota>
 <modal-notas
-  class="modal"
-  (close)="closeModal()"
+  (close)="isNotesModalVisible = modalToggler.closeModal()"
   [class.isVisible]="isNotesModalVisible"
 ></modal-notas>
 <div class="flex-column wrapper">
   <cabecera titulo="Notas" descripcion="Registra tus progresos y tus pensamientos"></cabecera>
   <div class="buscar-agregar">
     <input type="text" placeholder="Buscar en tus notas..." />
-    <button class="default-button" id="default-button" (click)="openModal()">+</button>
+    <button
+      class="default-button"
+      id="default-button"
+      (click)="isNotesModalVisible = modalToggler.showModal()"
+    >
+      +
+    </button>
   </div>
   <div class="notas-grid">
-    <div class="nota flex-column">
+    <div class="nota flex-column" (click)="expandNote = modalToggler.showModal()">
       <div class="titulo">Progreso en press de banca</div>
       <div class="descripcion">
         Hoy logré hacer 3 series de 12 repeticiones con 70kg. La semana pasada solo podía con 65kg.

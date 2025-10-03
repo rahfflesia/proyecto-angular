@@ -1,4 +1,7 @@
-<modal-metas [class.isVisible]="isGoalsModalVisible" (close)="closeGoalsModal()"></modal-metas>
+<modal-metas
+  [class.isVisible]="isGoalsModalVisible"
+  (close)="isGoalsModalVisible = modalToggler.closeModal()"
+></modal-metas>
 <div class="flex-column wrapper">
   <cabecera
     titulo="Mis metas"
@@ -6,7 +9,9 @@
   ></cabecera>
   <div class="agregar-meta">
     <h3>Agrega una meta</h3>
-    <div class="default-button add-button" (click)="showGoalsModal()">+</div>
+    <div class="default-button add-button" (click)="isGoalsModalVisible = modalToggler.showModal()">
+      +
+    </div>
   </div>
   <div class="seleccion-tipo-meta">
     <button>Activas</button>

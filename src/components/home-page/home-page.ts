@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { AgregarEjercicios } from '../agregar-ejercicios/agregar-ejercicios';
+import { Modals } from '../../servicios/modals';
 
 @Component({
   selector: 'home-page',
@@ -8,13 +9,6 @@ import { AgregarEjercicios } from '../agregar-ejercicios/agregar-ejercicios';
   styleUrl: './home-page.css',
 })
 export class HomePage {
+  modalToggler = inject(Modals);
   isExerciseComponentVisible: boolean = false;
-
-  toggleExerciseComponent() {
-    this.isExerciseComponentVisible = !this.isExerciseComponentVisible;
-  }
-
-  closeMenu() {
-    this.isExerciseComponentVisible = false;
-  }
 }

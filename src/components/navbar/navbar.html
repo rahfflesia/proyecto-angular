@@ -1,14 +1,14 @@
 <div class="navbar-wrapper">
   <div style="display: none" class="title">
     <h1>FITAPP</h1>
-    <div class="hamburger-button" (click)="toggleMenu()">
+    <div class="hamburger-button" (click)="isMenuVisible = modalToggler.toggleModal(isMenuVisible)">
       <img src="icons8-hamburger-menu-50.png" alt="" />
     </div>
   </div>
   <menu-movil
     class="mobile-menu"
     [class.isVisible]="isMenuVisible"
-    (linkClicked)="closeMenu()"
+    (linkClicked)="isMenuVisible = modalToggler.closeModal()"
   ></menu-movil>
   <div class="icons-wrapper flex-column">
     <div class="icons flex-column">

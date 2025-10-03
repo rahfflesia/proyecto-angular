@@ -1,13 +1,9 @@
 .agregar-ejercicio-root {
-  position: fixed;
-  min-height: 100dvh;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 999;
-  width: 100%;
-  display: flex;
   align-items: flex-end;
-  top: 0;
-  left: 0;
+}
+
+#agregar-ejercicio-componente {
+  width: 100%;
 }
 
 :host {
@@ -26,16 +22,6 @@
 
 :host(.isVisible) {
   transform: translateY(0);
-}
-
-.agregar-ejercicio-componente {
-  position: fixed;
-  background-color: var(--secondary-color);
-  width: 100%;
-  padding: 1.5rem;
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-  z-index: 1;
-  gap: 1rem;
 }
 
 input {

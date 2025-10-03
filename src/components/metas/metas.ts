@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Cabecera } from '../cabecera/cabecera';
 import { MetaCard } from '../meta-card/meta-card';
 import { ModalMetas } from '../modal-metas/modal-metas';
+import { Modals } from '../../servicios/modals';
 
 @Component({
   selector: 'metas',
@@ -10,13 +11,6 @@ import { ModalMetas } from '../modal-metas/modal-metas';
   styleUrl: './metas.css',
 })
 export class Metas {
+  modalToggler = inject(Modals);
   isGoalsModalVisible: boolean = false;
-
-  showGoalsModal() {
-    this.isGoalsModalVisible = true;
-  }
-
-  closeGoalsModal() {
-    this.isGoalsModalVisible = false;
-  }
 }

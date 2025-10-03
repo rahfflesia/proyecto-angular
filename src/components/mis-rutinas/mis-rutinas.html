@@ -1,13 +1,18 @@
 <agregar-ejercicios
   class="show-component"
   [class.isVisible]="isExerciseComponentVisible"
-  (close)="closeExerciseComponent()"
+  (close)="isExerciseComponentVisible = modalToggler.closeModal()"
 ></agregar-ejercicios>
 <div class="flex-column wrapper">
   <cabecera titulo="Mis rutinas" descripcion="Las mejores rutinas creadas por ti"></cabecera>
   <div class="crear-rutina">
     <h3>Crea tu propia rutina</h3>
-    <div class="default-button add-button" (click)="showExerciseComponent()">+</div>
+    <div
+      class="default-button add-button"
+      (click)="isExerciseComponentVisible = modalToggler.showModal()"
+    >
+      +
+    </div>
   </div>
   <div class="grid">
     <workout-card

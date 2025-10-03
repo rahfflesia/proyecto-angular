@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { MenuMovil } from '../menu-movil/menu-movil';
 import { NavigationService } from '../../servicios/navigation';
+import { Modals } from '../../servicios/modals';
 
 @Component({
   selector: 'navbar',
@@ -10,12 +11,6 @@ import { NavigationService } from '../../servicios/navigation';
 })
 export class Navbar {
   navigation = inject(NavigationService);
+  modalToggler = inject(Modals);
   isMenuVisible: boolean = false;
-  toggleMenu() {
-    this.isMenuVisible = !this.isMenuVisible;
-  }
-
-  closeMenu() {
-    this.isMenuVisible = false;
-  }
 }

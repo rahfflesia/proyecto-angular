@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Cabecera } from '../cabecera/cabecera';
 import { WorkoutCard } from '../workout-card/workout-card';
 import { AgregarEjercicios } from '../agregar-ejercicios/agregar-ejercicios';
+import { Modals } from '../../servicios/modals';
 
 @Component({
   selector: 'mis-rutinas',
@@ -10,13 +11,6 @@ import { AgregarEjercicios } from '../agregar-ejercicios/agregar-ejercicios';
   styleUrl: './mis-rutinas.css',
 })
 export class MisRutinas {
+  modalToggler = inject(Modals);
   isExerciseComponentVisible: boolean = false;
-
-  showExerciseComponent() {
-    this.isExerciseComponentVisible = true;
-  }
-
-  closeExerciseComponent() {
-    this.isExerciseComponentVisible = false;
-  }
 }
