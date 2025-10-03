@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Cabecera } from '../cabecera/cabecera';
-import { LogrosCard } from '../logros-card/logros-card';
+import { Cabecera } from '../../etc/cabecera/cabecera';
+import { LogrosCard } from '../../cards/logros-card/logros-card';
 
 @Component({
   selector: 'app-logros',

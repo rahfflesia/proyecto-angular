@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { MenuMovil } from '../menu-movil/menu-movil';
-import { NavigationService } from '../../servicios/navigation';
-import { Modals } from '../../servicios/modals';
+import { NavigationService } from '../../../servicios/navigation';
+import { Modals } from '../../../servicios/modals';
 
 @Component({
   selector: 'navbar',

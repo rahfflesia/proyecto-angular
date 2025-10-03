@@ -1,8 +1,8 @@
 import { Component, inject } from '@angular/core';
-import { Cabecera } from '../cabecera/cabecera';
-import { ModalNotas } from '../modal-notas/modal-notas';
-import { Modals } from '../../servicios/modals';
-import { ExpandirNota } from '../expandir-nota/expandir-nota';
+import { Cabecera } from '../../etc/cabecera/cabecera';
+import { ExpandirNota } from '../../modals/expandir-nota/expandir-nota';
+import { ModalNotas } from '../../modals/modal-notas/modal-notas';
+import { Modals } from '../../../servicios/modals';
 
 @Component({
   selector: 'notas',

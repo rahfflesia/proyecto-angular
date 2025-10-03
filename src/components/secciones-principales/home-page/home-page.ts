@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
-import { AgregarEjercicios } from '../agregar-ejercicios/agregar-ejercicios';
-import { Modals } from '../../servicios/modals';
+import { Modals } from '../../../servicios/modals';
+import { AgregarEjercicios } from '../../modals/agregar-ejercicios/agregar-ejercicios';
 
 @Component({
   selector: 'home-page',

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Cabecera } from '../cabecera/cabecera';
 import { BaseChartDirective } from 'ng2-charts';
 import { ChartConfiguration } from 'chart.js';
+import { Cabecera } from '../../etc/cabecera/cabecera';
 
 @Component({
   selector: 'estadisticas',

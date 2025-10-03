@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Cabecera } from '../cabecera/cabecera';
-import { WorkoutCard } from '../workout-card/workout-card';
-import { MetaCard } from '../meta-card/meta-card';
+import { Cabecera } from '../../etc/cabecera/cabecera';
+import { MetaCard } from '../../cards/meta-card/meta-card';
+import { WorkoutCard } from '../../cards/workout-card/workout-card';
 
 @Component({
   selector: 'app-historial',

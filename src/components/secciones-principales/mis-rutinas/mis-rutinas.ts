@@ -1,8 +1,8 @@
 import { Component, inject } from '@angular/core';
-import { Cabecera } from '../cabecera/cabecera';
-import { WorkoutCard } from '../workout-card/workout-card';
-import { AgregarEjercicios } from '../agregar-ejercicios/agregar-ejercicios';
-import { Modals } from '../../servicios/modals';
+import { Cabecera } from '../../etc/cabecera/cabecera';
+import { WorkoutCard } from '../../cards/workout-card/workout-card';
+import { AgregarEjercicios } from '../../modals/agregar-ejercicios/agregar-ejercicios';
+import { Modals } from '../../../servicios/modals';
 
 @Component({
   selector: 'mis-rutinas',

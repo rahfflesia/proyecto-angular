@@ -1,8 +1,8 @@
 import { Component, inject } from '@angular/core';
-import { Cabecera } from '../cabecera/cabecera';
-import { MetaCard } from '../meta-card/meta-card';
-import { ModalMetas } from '../modal-metas/modal-metas';
-import { Modals } from '../../servicios/modals';
+import { Cabecera } from '../../etc/cabecera/cabecera';
+import { ModalMetas } from '../../modals/modal-metas/modal-metas';
+import { MetaCard } from '../../cards/meta-card/meta-card';
+import { Modals } from '../../../servicios/modals';
 
 @Component({
   selector: 'metas',

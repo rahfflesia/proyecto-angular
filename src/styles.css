@@ -44,6 +44,29 @@ img {
   flex-direction: column;
 }
 
+.modal-wrapper {
+  display: flex;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100dvh;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-component {
+  background-color: var(--secondary-color);
+  padding: 1.5rem;
+  z-index: 2;
+  border-radius: var(--border-radius);
+  gap: 1rem;
+}
+
 button {
   border: none;
   border-radius: var(--border-radius);
