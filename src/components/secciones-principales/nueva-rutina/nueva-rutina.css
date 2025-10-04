@@ -1,0 +1,25 @@
+header > span {
+  font-weight: var(--semi-bold);
+}
+
+input,
+.guardar {
+  width: min(100%, 500px);
+}
+
+input {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+}
+
+.nueva-rutina-componente {
+  gap: 1rem;
+}
+
+.exercises {
+  gap: 1rem;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  max-height: 450px;
+}

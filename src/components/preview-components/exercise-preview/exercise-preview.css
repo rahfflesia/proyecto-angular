@@ -1,0 +1,33 @@
+* {
+  font-weight: var(--semi-bold);
+}
+
+.ejercicio {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  display: flex;
+}
+
+.delete-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.right {
+  flex: 1;
+  padding: 1rem;
+}
+
+.image-wrapper {
+  max-width: 100px;
+}
+
+.image-wrapper > img {
+  border-radius: var(--border-radius);
+  height: 100%;
+  object-fit: cover;
+}
+
+.nombre-repeticiones {
+  gap: 0.25rem;
+}

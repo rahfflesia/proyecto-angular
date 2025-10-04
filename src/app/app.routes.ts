@@ -16,6 +16,8 @@ import { ExerciseSection } from '../components/secciones-principales/exercise-se
 import { HomePage } from '../components/secciones-principales/home-page/home-page';
 import { FinalizacionRutina } from '../components/secciones-principales/finalizacion-rutina/finalizacion-rutina';
 import { Historial } from '../components/secciones-principales/historial/historial';
+import { NuevaRutina } from '../components/secciones-principales/nueva-rutina/nueva-rutina';
+import { Feed } from '../components/secciones-principales/feed/feed';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -40,6 +42,8 @@ export const routes: Routes = [
       { path: 'metas', component: Metas },
       { path: 'home', component: HomePage },
       { path: 'historial', component: Historial },
+      { path: 'nuevarutina', component: NuevaRutina },
+      { path: 'feed', component: Feed },
     ],
   },
   {

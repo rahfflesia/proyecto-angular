@@ -1,0 +1,76 @@
+.feed-card {
+  gap: 0.75rem;
+}
+
+.preview-rutina {
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  gap: 0.5rem;
+  border-radius: var(--border-radius);
+}
+
+.info-usuario {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.info-usuario > span,
+.nombre-rutina {
+  font-weight: bold;
+}
+
+.pfp {
+  width: 50px;
+  height: 50px;
+}
+
+.pfp > img {
+  object-fit: cover;
+  border-radius: 100%;
+  height: 100%;
+}
+
+.post-desc,
+.fecha-creacion,
+.autor,
+.dificultad {
+  font-size: 0.8rem;
+  color: var(--alternative-gray-font-color);
+}
+
+.fecha-creacion {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.post-desc {
+  line-height: 1.3;
+}
+
+.iconos-opciones {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.iconos-opciones > * {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+}
+
+.iconos-opciones > *:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.iconos-opciones img {
+  width: 30px;
+  height: 30px;
+}
+
+.autor-detalles > * {
+  flex: 1;
+}

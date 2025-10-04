@@ -43,6 +43,10 @@ export class NavigationService {
     this.router.navigate(['/historial']);
   }
 
+  toFeed() {
+    this.router.navigate(['/feed']);
+  }
+
   logout() {
     this.router.navigate(['/login']);
   }

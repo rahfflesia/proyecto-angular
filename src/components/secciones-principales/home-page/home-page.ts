@@ -11,4 +11,11 @@ import { AgregarEjercicios } from '../../modals/agregar-ejercicios/agregar-ejerc
 export class HomePage {
   modalToggler = inject(Modals);
   isExerciseComponentVisible: boolean = false;
+
+  obtenerSaludo(): string {
+    const fecha = new Date();
+    if (fecha.getHours() >= 0 && fecha.getHours() <= 11) return 'Buenos días';
+    else if (fecha.getHours() >= 12 && fecha.getHours() <= 18) return 'Buenas tardes';
+    else return 'Buenas noches';
+  }
 }

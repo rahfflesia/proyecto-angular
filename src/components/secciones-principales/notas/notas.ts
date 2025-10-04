@@ -3,10 +3,11 @@ import { Cabecera } from '../../etc/cabecera/cabecera';
 import { ExpandirNota } from '../../modals/expandir-nota/expandir-nota';
 import { ModalNotas } from '../../modals/modal-notas/modal-notas';
 import { Modals } from '../../../servicios/modals';
+import { NoteCard } from '../../cards/note-card/note-card';
 
 @Component({
   selector: 'notas',
-  imports: [Cabecera, ModalNotas, ExpandirNota],
+  imports: [Cabecera, ModalNotas, ExpandirNota, NoteCard],
   templateUrl: './notas.html',
   styleUrl: './notas.css',
 })

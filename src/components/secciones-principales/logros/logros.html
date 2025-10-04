@@ -1,3 +1,7 @@
+<modal-logros
+  [class.isVisible]="isAchievementsModalVisible"
+  (close)="isAchievementsModalVisible = modalToggler.closeModal()"
+></modal-logros>
 <div class="flex-column wrapper">
   <cabecera
     titulo="Logros"
@@ -13,6 +17,7 @@
       descripcionLogro="Entrena durante 7 días seguidos"
       estadoLogro="Completado"
       imagenLogroUrl="/achievements-icons/fire.png"
+      (click)="isAchievementsModalVisible = modalToggler.showModal()"
     ></logros-card>
     <logros-card
       tituloLogro="Principiante"
