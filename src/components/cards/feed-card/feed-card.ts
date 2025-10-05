@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'feed-card',
@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './feed-card.html',
   styleUrl: './feed-card.css',
 })
-export class FeedCard {}
+export class FeedCard {
+  @Output() clickComment = new EventEmitter<void>();
+
+  onCommentClick() {
+    this.clickComment.emit();
+  }
+}

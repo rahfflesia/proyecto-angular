@@ -1,0 +1,32 @@
+.user-comments {
+  gap: 1rem;
+  max-height: 500px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.modal-component {
+  gap: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.input-wrapper {
+  display: flex;
+}
+
+.input-wrapper > * {
+  flex: 1;
+}
+
+@media (width <= 850px) {
+  .user-comments {
+    max-height: 400px;
+  }
+}

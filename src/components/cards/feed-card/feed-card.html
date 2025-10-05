@@ -9,8 +9,9 @@
   <div class="preview-rutina flex-column">
     <span class="nombre-rutina blue-font-color">Rutina sin equipo</span>
     <span class="dificultad">Media</span>
-    <div class="autor-detalles">
+    <div class="autor-detalles flex-column">
       <span class="autor">Creada por Usuario</span>
+      <span class="calificacion">Calificación promedio: 4.5/5</span>
     </div>
     <button class="default-button">Ver</button>
   </div>
@@ -19,7 +20,7 @@
       <div>
         <img src="/feed-card-icons/icons8-add-50.png" alt="agregar-rutina-icono" />
       </div>
-      <div>
+      <div (click)="onCommentClick()">
         <img src="/feed-card-icons/icons8-comments-48.png" alt="comentarios-icono" />
       </div>
       <div>

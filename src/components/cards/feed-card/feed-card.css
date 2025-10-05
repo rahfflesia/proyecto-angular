@@ -34,7 +34,8 @@
 .post-desc,
 .fecha-creacion,
 .autor,
-.dificultad {
+.dificultad,
+.calificacion {
   font-size: 0.8rem;
   color: var(--alternative-gray-font-color);
 }

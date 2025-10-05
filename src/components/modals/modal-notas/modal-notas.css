@@ -23,22 +23,3 @@ textarea {
   box-sizing: border-box;
   cursor: pointer;
 }
-
-:host {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-}
-
-:host {
-  transform: scale(0);
-  transition: transform 300ms ease-out;
-}
-
-:host(.isVisible) {
-  transform: scale(1);
-}

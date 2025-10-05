@@ -1,10 +1,14 @@
+<modal-comentarios
+  [FullscreenOverlay]="isCommentsModalVisible"
+  (closeButtonClick)="isCommentsModalVisible = modalToggler.closeModal()"
+></modal-comentarios>
 <div class="wrapper flex-column">
   <cabecera
     titulo="Feed"
     descripcion="Explora, califica y agrega rutinas de otros usuarios"
   ></cabecera>
   <div class="feed-grid">
-    <feed-card></feed-card>
+    <feed-card (clickComment)="isCommentsModalVisible = modalToggler.showModal()"></feed-card>
     <feed-card></feed-card>
     <feed-card></feed-card>
     <feed-card></feed-card>

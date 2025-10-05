@@ -1,10 +1,10 @@
 <expandir-nota
+  [FullscreenOverlay]="expandNote"
   (close)="expandNote = modalToggler.closeModal()"
-  [class.isVisible]="expandNote"
 ></expandir-nota>
 <modal-notas
+  [FullscreenOverlay]="isNotesModalVisible"
   (close)="isNotesModalVisible = modalToggler.closeModal()"
-  [class.isVisible]="isNotesModalVisible"
 ></modal-notas>
 <div class="flex-column wrapper">
   <cabecera titulo="Notas" descripcion="Registra tus progresos y tus pensamientos"></cabecera>
