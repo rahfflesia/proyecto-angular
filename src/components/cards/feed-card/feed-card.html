@@ -12,8 +12,9 @@
     <div class="autor-detalles flex-column">
       <span class="autor">Creada por Usuario</span>
       <span class="calificacion">Calificación promedio: 4.5/5</span>
+      <span class="grupos-musculares">Pierna</span>
     </div>
-    <button class="default-button">Ver</button>
+    <button class="default-button" (click)="onViewClick()">Ver</button>
   </div>
   <div class="opciones">
     <div class="iconos-opciones">
@@ -23,7 +24,7 @@
       <div (click)="onCommentClick()">
         <img src="/feed-card-icons/icons8-comments-48.png" alt="comentarios-icono" />
       </div>
-      <div>
+      <div (click)="onRatingClick()">
         <img src="/feed-card-icons/icons8-star-50.png" alt="calificar-icono" />
       </div>
     </div>

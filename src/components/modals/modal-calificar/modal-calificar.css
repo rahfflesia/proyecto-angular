@@ -1,0 +1,16 @@
+.calificar-component,
+.calificar {
+  gap: 1rem;
+}
+
+.calificar > span {
+  color: var(--alternative-gray-font-color);
+  font-size: 0.8rem;
+}
+
+select {
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  background-color: var(--secondary-color);
+}

@@ -1,0 +1,26 @@
+.routine-preview-wrapper {
+  gap: 0.5rem;
+  max-width: 700px;
+  width: 100%;
+}
+
+.numero-ejercicios {
+  font-weight: bold;
+}
+
+.exercise-list {
+  gap: 0.75rem;
+  max-height: 430px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+@media (width <= 768px) {
+  .exercise-list {
+    max-height: 350px;
+  }
+
+  .routine-preview-wrapper {
+    margin: 1rem;
+  }
+}

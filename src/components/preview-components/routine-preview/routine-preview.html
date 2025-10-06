@@ -1,0 +1,28 @@
+<div class="modal-wrapper">
+  <div class="modal-component routine-preview-wrapper flex-column">
+    <header class="flex-between">
+      <h3 class="blue-font-color">Rutina sin equipo</h3>
+      <button class="close-button" (click)="onCloseButtonClick()">X</button>
+    </header>
+    <span class="numero-ejercicios">Ejercicios (5)</span>
+    <div class="creador gray-text">
+      <span>Creada por Usuario</span>
+    </div>
+    <div class="dificultad-musculo gray-text flex-between">
+      <span>Pierna</span>
+      <span>Media</span>
+    </div>
+    <div class="calificacion-promedio gray-text">
+      <span>Calificacion promedio: 4.5/5</span>
+    </div>
+    <div class="exercise-list flex-column">
+      <exercise-preview></exercise-preview>
+      <exercise-preview></exercise-preview>
+      <exercise-preview></exercise-preview>
+      <exercise-preview></exercise-preview>
+      <exercise-preview></exercise-preview>
+      <exercise-preview></exercise-preview>
+    </div>
+    <button class="default-button">Agregar</button>
+  </div>
+</div>

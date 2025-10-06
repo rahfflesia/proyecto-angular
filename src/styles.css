@@ -78,6 +78,11 @@ img {
   justify-content: center;
 }
 
+.gray-text {
+  color: var(--alternative-gray-font-color);
+  font-size: var(--label-font-size);
+}
+
 .modal-component {
   background-color: var(--secondary-color);
   padding: 1.5rem;
