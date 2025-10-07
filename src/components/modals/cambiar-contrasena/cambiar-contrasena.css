@@ -1,0 +1,13 @@
+.cambiar-usuario-wrapper {
+  gap: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+header {
+  gap: 1rem;
+}

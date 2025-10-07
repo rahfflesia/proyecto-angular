@@ -1,3 +1,8 @@
+<cambiar-usuario [FullscreenOverlay]="isChangeUsernameModalVisible"></cambiar-usuario>
+<cambiar-contrasena [FullscreenOverlay]="isChangePasswordModalVisible"></cambiar-contrasena>
+<!---<edit-profile-modal></edit-profile-modal> -->
+<!---<modal-logros-usuario></modal-logros-usuario> -->
+<!---<modal-info-personal></modal-info-personal> -->
 <div class="flex-column" id="profile-wrapper">
   <div class="foto-portada">
     <div class="foto-perfil">
@@ -8,13 +13,40 @@
     <div class="nombre-usuario">
       <h2>Usuario</h2>
     </div>
-    <div class="nivel-wrapper" style="display: flex; gap: 1rem; flex-wrap: wrap">
-      <div class="nivel">Intermedio</div>
+    <div class="nivel-wrapper" style="display: flex; flex-wrap: wrap">
+      <div class="nivel" id="nivel">Intermedio</div>
       <button class="default-button">Editar perfil</button>
+      <div class="more-icon">
+        <img src="/etc/icons8-more-64.png" alt="more-icon" />
+        <div class="opciones flex-column" style="display: none">
+          <button>Cambiar contraseña</button>
+        </div>
+      </div>
+    </div>
+    <div class="miembro-racha" id="miembro-racha">
+      <div class="flex-column miembro-desde">
+        <span class="blue-font-color">Miembro desde el</span>
+        <span>15 abr 25</span>
+      </div>
+      <div class="racha flex-column">
+        <span class="blue-font-color">Mejor racha</span>
+        <span>5 días</span>
+      </div>
+    </div>
+    <div class="bio">
+      <h3 class="blue-font-color">Acerca de</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, cupiditate! Fuga corrupti
+        quae expedita incidunt autem ut, obcaecati tempore consequatur eum cupiditate quam error
+        commodi maiores, dolore sit explicabo reprehenderit.
+      </p>
     </div>
     <div class="profile-grid">
       <div class="flex-column informacion-personal">
-        <h3>Información personal</h3>
+        <div class="flex-between">
+          <h3>Información personal</h3>
+          <button class="default-button">Editar</button>
+        </div>
         <div class="altura">
           <span><strong>Altura</strong></span>
           <span><strong>188 cm</strong></span>
@@ -51,35 +83,21 @@
           <span class="logros-completados">3/30</span>
         </div>
         <div class="logros-wrapper flex-column" style="gap: 1rem">
-          <div class="logros-component" style="display: flex; gap: 1rem; align-items: center">
-            <img src="/achievements-icons/gym.png" alt="" style="width: 30px; height: 30px" />
-            <div class="logro-info" style="display: flex; flex-direction: column">
-              <span><strong>Primera meta</strong></span>
-              <span class="descripcion">Completa tu primer entrenamiento</span>
-              <span class="fecha-desbloqueo">31/01/22</span>
-            </div>
-          </div>
-          <div class="logros-component" style="display: flex; gap: 1rem; align-items: center">
-            <img src="/achievements-icons/fire.png" alt="" style="width: 30px; height: 30px" />
-            <div class="logro-info" style="display: flex; flex-direction: column">
-              <span><strong>En racha</strong></span>
-              <span class="descripcion">Entrena durante siete días seguidos</span>
-              <span class="fecha-desbloqueo">17/04/23</span>
-            </div>
-          </div>
-          <div class="logros-component" style="display: flex; gap: 1rem; align-items: center">
-            <img
-              src="/achievements-icons/in-between.png"
-              alt=""
-              style="width: 30px; height: 30px"
-            />
-            <div class="logro-info" style="display: flex; flex-direction: column">
-              <span><strong>Intermedio</strong></span>
-              <span class="descripcion">Alcanza el nivel intermedio</span>
-              <span class="fecha-desbloqueo">05/05/23</span>
-            </div>
-          </div>
+          <logro-preview></logro-preview>
+          <logro-preview></logro-preview>
+          <logro-preview></logro-preview>
         </div>
+      </div>
+    </div>
+    <div class="rutinas-publicas">
+      <h3 style="margin-bottom: 1rem; margin-top: 0.5rem">Rutinas públicas</h3>
+      <div class="rutinas-publicas-grid">
+        <feed-card></feed-card>
+        <feed-card></feed-card>
+        <feed-card></feed-card>
+        <feed-card></feed-card>
+        <feed-card></feed-card>
+        <feed-card></feed-card>
       </div>
     </div>
   </div>

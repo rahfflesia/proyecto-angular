@@ -35,8 +35,18 @@ h3 {
   gap: 0.75rem;
 }
 
+#miembro-racha {
+  padding: 0;
+  text-align: center;
+}
+
+.nivel-wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .nivel-wrapper > * {
-  font-size: 1.5rem;
+  font-size: 1;
 }
 
 .nombre-usuario > h2 {
@@ -55,15 +65,37 @@ h3 {
 
 .nivel + * {
   padding: 0.25rem 5rem;
+  font-size: 1rem;
 }
 
-.profile-grid {
+.profile-grid,
+.rutinas-publicas-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
-.profile-grid > * {
+.bio {
+  padding: 1.5rem;
+  max-width: 75ch;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  overflow-wrap: break-word;
+}
+
+.bio > h3 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.bio > p {
+  line-height: 1.3;
+  font-size: 0.8rem;
+  color: var(--alternative-gray-font-color);
+}
+
+.profile-grid > *,
+.rutinas-publicas-grid > * {
   padding: 2rem;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
@@ -96,12 +128,6 @@ h3 {
   gap: 1rem;
 }
 
-.logros-component {
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius);
-  padding: 0.5rem;
-}
-
 .logros-completados {
   padding: 0.5rem;
   border-radius: var(--border-radius);
@@ -114,6 +140,64 @@ h3 {
 .fecha-desbloqueo {
   color: var(--alternative-gray-font-color);
   font-size: 0.85rem;
+}
+
+.more-icon {
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.more-icon > img {
+  width: 30px;
+  height: 30px;
+}
+
+#nivel {
+  padding: 0.5rem;
+}
+
+.opciones > *:hover {
+  background-color: lightgray;
+}
+
+.opciones {
+  position: absolute;
+  box-shadow: var(--box-shadow);
+  border-radius: 1rem;
+}
+
+.opciones > * {
+  background-color: var(--secondary-color);
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+}
+
+.opciones > button {
+  border-radius: 0;
+}
+
+.miembro-racha {
+  display: flex;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.miembro-racha > * {
+  display: grid;
+  place-items: center;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.peso-input,
+.altura-input {
+  border: none;
+  border-bottom: 1px solid var(--border-color);
 }
 
 @media (width <= 768px) {
@@ -149,5 +233,9 @@ h3 {
     width: 125px;
     height: 125px;
     transform: translateY(calc(115px / 2));
+  }
+
+  .miembro-racha > * {
+    flex: 1;
   }
 }

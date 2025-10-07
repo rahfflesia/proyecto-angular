@@ -1,0 +1,22 @@
+.numero-logros {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.logros-modal-component {
+  margin: 1rem;
+}
+
+.logros-modal-component,
+.logros-wrapper {
+  gap: 1rem;
+}
+
+.logros-wrapper {
+  max-height: 400px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}

@@ -1,0 +1,15 @@
+.logros-component {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+}
+
+.descripcion,
+.fecha-desbloqueo {
+  font-size: 0.85rem;
+  color: var(--alternative-gray-font-color);
+}
+
+.logro-info {
+  gap: 0.25rem;
+}
