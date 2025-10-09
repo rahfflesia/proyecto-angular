@@ -62,6 +62,21 @@ button {
   font-size: 3rem;
 }
 
+.help-icon-wrapper {
+  padding: 0.25rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.help-icon-wrapper > img {
+  width: 28px;
+  height: 28px;
+}
+
+.help-icon-wrapper:hover {
+  background-color: rgb(11, 3, 169);
+}
+
 @media (width >= 768px) {
   .next-exercise > img {
     width: 250px;

@@ -1,13 +1,32 @@
-<div class="flex-column">
+<div class="flex-column workout-card-wrapper">
   <div class="photo-placeholder" [style.backgroundColor]="getRandomHex()">
     <img [src]="imgUrl" alt="" />
   </div>
   <div class="workout-data-card flex-column">
-    <div class="workout-name">{{ title }}</div>
+    <div class="workout-name flex-between">
+      {{ title }}
+      <section style="display: flex; gap: 0.5rem">
+        <img src="/edit-delete-icons/icons8-edit-48.png" alt="edit-icon" />
+        <img src="/edit-delete-icons/icons8-delete-50.png" alt="delete-icon" />
+      </section>
+    </div>
     <div class="difficulty">{{ difficulty }}</div>
     <div class="button-wrapper">
       <span class="number-of-exercises">{{ numberOfExercises }} ejercicios</span>
-      <button class="start-button">Iniciar</button>
+      <div style="display: flex; gap: 0.5rem">
+        <button class="start-button">Iniciar</button>
+        <button class="start-button">Ver notas</button>
+      </div>
+    </div>
+  </div>
+  <div class="absolute-icons">
+    <div class="absolute-icons-inner">
+      <div>
+        <img src="/icons8-share-60.png" alt="share-icon" />
+      </div>
+      <div>
+        <img src="/heart.png" alt="heart-icon" />
+      </div>
     </div>
   </div>
 </div>

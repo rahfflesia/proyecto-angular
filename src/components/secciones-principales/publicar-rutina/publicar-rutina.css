@@ -1,0 +1,16 @@
+.input-wrapper {
+  gap: 0.5rem;
+}
+
+.input-wrapper > label {
+  font-weight: bold;
+}
+
+.publicar-rutina {
+  gap: 1rem;
+}
+
+textarea {
+  resize: none;
+  min-height: 250px;
+}

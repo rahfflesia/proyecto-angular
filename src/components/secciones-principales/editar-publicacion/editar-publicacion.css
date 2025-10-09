@@ -1,0 +1,27 @@
+.input-wrapper {
+  gap: 0.5rem;
+}
+
+.input-wrapper > label {
+  font-weight: bold;
+}
+
+.editar-publicacion-wrapper {
+  gap: 1.5rem;
+}
+
+textarea {
+  min-height: 250px;
+  resize: none;
+}
+
+.buttons {
+  display: flex;
+  max-width: 500px;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.buttons > * {
+  flex: 1;
+}

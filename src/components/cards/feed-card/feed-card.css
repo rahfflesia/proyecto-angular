@@ -43,7 +43,7 @@
 
 .fecha-creacion {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .post-desc {

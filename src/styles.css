@@ -30,10 +30,27 @@
   --logro-completado-color: #238a2a;
 }
 
+input,
+textarea,
+select {
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-half {
+  margin-bottom: 0.5rem;
 }
 
 .router-outlet {

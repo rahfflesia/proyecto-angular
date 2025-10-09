@@ -18,6 +18,8 @@ import { FinalizacionRutina } from '../components/secciones-principales/finaliza
 import { Historial } from '../components/secciones-principales/historial/historial';
 import { NuevaRutina } from '../components/secciones-principales/nueva-rutina/nueva-rutina';
 import { Feed } from '../components/secciones-principales/feed/feed';
+import { EditarPublicacion } from '../components/secciones-principales/editar-publicacion/editar-publicacion';
+import { PublicarRutina } from '../components/secciones-principales/publicar-rutina/publicar-rutina';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -44,6 +46,8 @@ export const routes: Routes = [
       { path: 'historial', component: Historial },
       { path: 'nuevarutina', component: NuevaRutina },
       { path: 'feed', component: Feed },
+      { path: 'editarpublicacion', component: EditarPublicacion },
+      { path: 'publicarrutina', component: PublicarRutina },
     ],
   },
   {

@@ -24,9 +24,34 @@
 }
 
 .comentario,
-.comment-date {
+.comment-options > * {
   font-size: 0.8rem;
   color: var(--alternative-gray-font-color);
+}
+
+.comment-options {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.comment-options > button {
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  padding: 0.15rem;
+  border: 1px solid var(--border-color);
+}
+
+.like-button > img {
+  width: 20px;
+  height: 20px;
+}
+
+.like-button {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
 }
 
 @media (width <= 800px) {

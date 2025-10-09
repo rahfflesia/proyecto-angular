@@ -1,6 +1,40 @@
+.workout-card-wrapper {
+  position: relative;
+}
+
 .photo-placeholder {
   border-radius: 0.5rem;
   height: 125px;
+}
+
+section > * {
+  width: 25px;
+  height: 25px;
+}
+
+.absolute-icons {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.absolute-icons-inner {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.75rem;
+}
+
+.absolute-icons-inner > * {
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  padding: 0.5rem;
+}
+
+.absolute-icons-inner > * > img {
+  width: 25px;
+  height: 25px;
 }
 
 .photo-placeholder > img {

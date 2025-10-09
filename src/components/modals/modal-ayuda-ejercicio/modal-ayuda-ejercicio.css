@@ -1,0 +1,63 @@
+.ayuda-ejercicio {
+  width: 100%;
+  max-height: 100%;
+  gap: 1.5rem;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.exercise-name {
+  font-weight: bold;
+}
+
+#barra-opciones,
+.exercise-gif {
+  display: flex;
+}
+
+.exercise-gif {
+  justify-content: center;
+  align-items: center;
+}
+
+#barra-opciones > * {
+  flex: 1;
+  border-radius: 0;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+#musculos-trabajados.musculos-trabajados {
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+#instrucciones.instrucciones {
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.span-wrapper {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.musculos {
+  gap: 0.5rem;
+}
+
+.span-wrapper > * {
+  background-color: var(--primary-color);
+  font-weight: bold;
+  border-radius: var(--border-radius);
+  color: var(--secondary-color);
+  padding: 0.25rem 0.5rem;
+}
+
+@media (width >= 768px) {
+  .exercise-gif > img {
+    width: 250px;
+    height: 250px;
+  }
+}

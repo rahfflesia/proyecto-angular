@@ -5,6 +5,9 @@
     </div>
     <span>Usuario</span>
   </div>
+  <div class="encabezado" style="max-width: 30ch; overflow-wrap: break-word">
+    <h3>Rutina para principiantes sin equipo (en casa)</h3>
+  </div>
   <div class="post-desc">Mi rutina personal sin equipo alguno.</div>
   <div class="preview-rutina flex-column">
     <span class="nombre-rutina blue-font-color">Rutina sin equipo</span>
@@ -15,9 +18,16 @@
       <span class="grupos-musculares">Pierna</span>
     </div>
     <button class="default-button" (click)="onViewClick()">Ver</button>
+    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap">
+      <button class="default-button" style="flex: 1">Eliminar</button>
+      <button class="default-button" style="flex: 1">Editar</button>
+    </div>
   </div>
   <div class="opciones">
     <div class="iconos-opciones">
+      <div class="flex-column" style="gap: 0.25rem">
+        <img src="/feed-card-icons/icons8-like-50.png" alt="like-icono" />
+      </div>
       <div>
         <img src="/feed-card-icons/icons8-add-50.png" alt="agregar-rutina-icono" />
       </div>
@@ -30,6 +40,7 @@
     </div>
   </div>
   <div class="fecha-creacion">
+    <span style="font-weight: bold">Likes: 100</span>
     <span>15 sept 25 09:30 AM</span>
   </div>
 </div>
