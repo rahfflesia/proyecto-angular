@@ -1,8 +1,21 @@
 <cambiar-usuario [FullscreenOverlay]="isChangeUsernameModalVisible"></cambiar-usuario>
 <cambiar-contrasena [FullscreenOverlay]="isChangePasswordModalVisible"></cambiar-contrasena>
-<!---<edit-profile-modal></edit-profile-modal> -->
-<!---<modal-logros-usuario></modal-logros-usuario> -->
-<!---<modal-info-personal></modal-info-personal> -->
+<edit-profile-modal
+  [FullscreenOverlay]="isEditProfileModalVisible"
+  (onCloseButtonClick)="isEditProfileModalVisible = modalToggler.closeModal()"
+></edit-profile-modal>
+<modal-info-personal
+  [FullscreenOverlay]="isChangeUserInfoVisible"
+  (closeButtonClick)="isChangeUserInfoVisible = modalToggler.closeModal()"
+></modal-info-personal>
+<modal-logros-usuario
+  [FullscreenOverlay]="isAchievementsModalVisible"
+  (closeButtonClick)="isAchievementsModalVisible = modalToggler.closeModal()"
+></modal-logros-usuario>
+<cambiar-contrasena
+  [FullscreenOverlay]="isChangePasswordModalVisible"
+  (closeButtonClick)="isChangePasswordModalVisible = modalToggler.closeModal()"
+></cambiar-contrasena>
 <div class="flex-column" id="profile-wrapper">
   <div class="foto-portada">
     <div class="foto-perfil">
@@ -15,10 +28,16 @@
     </div>
     <div class="nivel-wrapper" style="display: flex; flex-wrap: wrap">
       <div class="nivel" id="nivel">Intermedio</div>
-      <button class="default-button">Editar perfil</button>
-      <div class="more-icon">
+      <button class="default-button" (click)="isEditProfileModalVisible = modalToggler.showModal()">
+        Editar perfil
+      </button>
+      <div class="more-icon" style="display: flex; flex-wrap: wrap">
         <img src="/etc/icons8-more-64.png" alt="more-icon" />
-        <div class="opciones flex-column" style="display: none">
+        <div
+          class="opciones flex-column"
+          style="display: block"
+          (click)="isChangePasswordModalVisible = modalToggler.showModal()"
+        >
           <button>Cambiar contraseña</button>
         </div>
       </div>
@@ -45,7 +64,12 @@
       <div class="flex-column informacion-personal">
         <div class="flex-between">
           <h3>Información personal</h3>
-          <button class="default-button">Editar</button>
+          <button
+            class="default-button"
+            (click)="isChangeUserInfoVisible = modalToggler.showModal()"
+          >
+            Editar
+          </button>
         </div>
         <div class="altura">
           <span><strong>Altura</strong></span>
@@ -69,7 +93,7 @@
           </div>
         </div>
       </div>
-      <div class="resumen-logros">
+      <div class="resumen-logros" (click)="isAchievementsModalVisible = modalToggler.showModal()">
         <div
           class="logros-header"
           style="

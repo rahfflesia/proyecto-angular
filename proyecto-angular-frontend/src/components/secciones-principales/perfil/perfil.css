@@ -167,6 +167,9 @@ h3 {
   position: absolute;
   box-shadow: var(--box-shadow);
   border-radius: 1rem;
+  top: 0;
+  right: 0;
+  transform: translateY(50%);
 }
 
 .opciones > * {

@@ -1,7 +1,3 @@
-<routine-preview
-  [FullscreenOverlay]="isRoutinePreviewVisible"
-  (close)="isRoutinePreviewVisible = modalToggler.closeModal()"
-></routine-preview>
 <modal-calificar
   [FullscreenOverlay]="isRatingModalVisible"
   (close)="isRatingModalVisible = modalToggler.closeModal()"
@@ -16,11 +12,7 @@
     descripcion="Explora, califica y agrega rutinas de otros usuarios"
   ></cabecera>
   <div class="feed-grid">
-    <feed-card
-      (clickComment)="isCommentsModalVisible = modalToggler.showModal()"
-      (clickRoutine)="isRatingModalVisible = modalToggler.showModal()"
-      (clickView)="isRoutinePreviewVisible = modalToggler.showModal()"
-    ></feed-card>
+    <feed-card></feed-card>
     <feed-card></feed-card>
     <feed-card></feed-card>
     <feed-card></feed-card>

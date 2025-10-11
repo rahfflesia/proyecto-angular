@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'modal-info-personal',
@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './modal-info-personal.html',
   styleUrl: './modal-info-personal.css',
 })
-export class ModalInfoPersonal {}
+export class ModalInfoPersonal {
+  @Output() closeButtonClick = new EventEmitter<void>();
+
+  onCloseButtonClick() {
+    this.closeButtonClick.emit();
+  }
+}

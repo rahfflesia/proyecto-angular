@@ -7,6 +7,7 @@ import { EditProfileModal } from '../../modals/edit-profile-modal/edit-profile-m
 import { FeedCard } from '../../cards/feed-card/feed-card';
 import { ModalLogrosUsuario } from '../../modals/modal-logros-usuario/modal-logros-usuario';
 import { ModalInfoPersonal } from '../../modals/modal-info-personal/modal-info-personal';
+import { NavigationService } from '../../../servicios/navigation';
 
 @Component({
   selector: 'app-perfil',
@@ -18,15 +19,20 @@ import { ModalInfoPersonal } from '../../modals/modal-info-personal/modal-info-p
     FeedCard,
     ModalLogrosUsuario,
     ModalInfoPersonal,
+    CambiarContrasena,
   ],
   templateUrl: './perfil.html',
   styleUrl: './perfil.css',
 })
 export class Perfil {
-  modalTogller = inject(Modals);
+  modalToggler = inject(Modals);
+  navigation = inject(NavigationService);
+
   isChangeUsernameModalVisible: boolean = false;
   isChangePasswordModalVisible: boolean = false;
   isChangeUserInfoVisible: boolean = false;
   isEditProfileModalVisible: boolean = false;
+  isAchievementsModalVisible: boolean = false;
+  isUsersAchievementsModalVisible: boolean = false;
   isOwnProfile: boolean = false;
 }

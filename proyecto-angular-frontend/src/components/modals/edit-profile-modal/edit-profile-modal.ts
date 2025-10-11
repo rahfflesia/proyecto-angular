@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'edit-profile-modal',
@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './edit-profile-modal.html',
   styleUrl: './edit-profile-modal.css',
 })
-export class EditProfileModal {}
+export class EditProfileModal {
+  @Output() onCloseButtonClick = new EventEmitter<void>();
+
+  closeEditProfileModal() {
+    this.onCloseButtonClick.emit();
+  }
+}

@@ -47,6 +47,14 @@ export class NavigationService {
     this.router.navigate(['/feed']);
   }
 
+  toPublishPublication() {
+    this.router.navigate(['/publicarrutina']);
+  }
+
+  toEditPublication() {
+    this.router.navigate(['/editarpublicacion']);
+  }
+
   logout() {
     this.router.navigate(['/login']);
   }
