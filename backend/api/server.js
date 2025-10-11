@@ -2,13 +2,16 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
-app.get("/", (req, res) => {
-  res.send("Servidor de prueba!!!?");
+const rutasUsuario = require("./rutas/usuario");
+const rutasEjercicios = require("./rutas/ejercicios");
+
+app.get("/", function (req, res) {
+  res.send("Raíz de la api");
 });
 
-app.get("/usuario", function (req, res) {
-  res.send({ nombreUsuario: "rafflesia", nivel: "Intermedio" });
-});
+app.use("/usuarios", rutasUsuario);
+
+app.use("/ejercicios", rutasEjercicios);
 
 app.listen(port, () => {
   console.log(`Servidor escuchando en http://localhost:${port}`);

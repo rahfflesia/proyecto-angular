@@ -1,6 +1,8 @@
 const express = require("express");
-const app = express();
+const router = express.Router();
 
-app.get("usuarios/:id", function (req, res) {
-  const userId = req.params.id;
+router.get("/:id", function (req, res) {
+  res.send({ mensaje: "endpoint de obtener usuario funcionando" });
 });
+
+module.exports = router;
